@@ -10,6 +10,8 @@ https://dl.acm.org/citation.cfm?id=2980254
 
 https://arxiv.org/abs/1905.03277
 
+Although compared to those works (which run on a phone in seconds), this is quite clumsy and unoptimized: it takes nearly an hour per burst of images on a desktop computer and requires at least 32GB of RAM.
+
 The basic components are 1. estimating optical flow to align the images, 2. misalignment robust block merging a la Hasinoff et al., 3. a naive superres approach by upsampling images *before* warping/aligning with subpixel accurate flow.
 
 The dependencies are dcraw, for demosaicking, pyflow, which is a wrapper on Ce Liu's implementation of coarse to fine flow estimation, and cv2, imagemagick, and some python libraries, for some image processing tasks.
