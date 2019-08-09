@@ -14,4 +14,4 @@ The basic components are 1. estimating optical flow to align the images, 2. misa
 
 The dependencies are dcraw, for demosaicking, pyflow, which is a wrapper on Ce Liu's implementation of coarse to fine flow estimation, and cv2, imagemagick, and some python libraries, for some image processing tasks.
 
-The code isn't really plug-and-play yet, so I won't bother writing how-to-use documentation. All of the steps are implemented as a function in cmds.sh, and merge.py is used as the last step.
+The code isn't really plug-and-play yet, so I won't bother writing how-to-use documentation. All of the steps are implemented as a function in cmds.sh, and merge.py is used as the last step. The output is 16 bit linear RGB.
