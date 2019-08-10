@@ -38,4 +38,10 @@ make_warps() {
 }
 
 
+copyexif() {
+    exiftool -all= -tagsfromfile tiffs/1.tiff -exif:all out.tiff
+    exiftool -tagsfromfile tiffs/1.tiff -icc_profile out.tiff
+}
+
+
 
